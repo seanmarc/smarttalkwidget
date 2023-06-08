@@ -12,7 +12,7 @@ function App({userId}) {
   };
 
   return (
-    <div className="p-6 fixed bottom-4 right-4 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
+    <div style={{position:"fixed", bottom: "12px", right:"12px"}} className="p-6 fixed bottom-4 right-4 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
       <div className="flex-1">
         {messages.map((message, index) => (
           <div key={index} className="p-2 bg-blue-500 text-white mt-2 rounded">

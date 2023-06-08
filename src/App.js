@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
 
-function App() {
+function App({userId}) {
+  console.log("USER ID:", userId);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
 

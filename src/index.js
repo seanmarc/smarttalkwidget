@@ -1,17 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// Create a new div element
+const root = document.createElement('div');
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Append it to the body of the document
+document.body.appendChild(root);
+
+// Now render the App component into the new div
+ReactDOM.createRoot(root).render(<App />);
